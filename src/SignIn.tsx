@@ -35,9 +35,9 @@ export default function SignIn() {
     event.preventDefault();
     const data = new FormData(event.currentTarget);
 
+    // 비밀번호는 콘솔에 남기지 않는다. 실제 로그인 요청은 이 자리에서 호출한다.
     console.log({
       email: data.get('email'),
-      password: data.get('password'),
     });
 
   };
